@@ -1,0 +1,16 @@
+<div id="notifiable_notification">
+  <%= form_for @notification, :url => notifications_path, :remote => true do |f| %>
+    <%= f.label :level %>
+    <%= f.text_field :level %>
+    <br/>
+    <%= f.label :header %>
+    <%= f.text_field :header %>
+    <br />
+    <%= f.label :message %>
+    <%= f.text_field :message %>
+    <br/>
+    <%= f.label :expires %>
+    <%= f.text_field :expires %>
+    <%= f.submit "Send Notification" %>
+  <% end %>
+</div>
