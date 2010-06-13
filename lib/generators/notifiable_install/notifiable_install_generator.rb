@@ -1,7 +1,7 @@
 class NotifiableInstallGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
 
-  desc "Creates a Notifibale Messages initializer and migration to your application."
+  desc "Creates a Notifiable Messages initializer and migration to your application."
 
   def self.source_root
     @_sooner_source_root ||= File.expand_path("../templates", __FILE__)
